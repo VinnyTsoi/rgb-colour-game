@@ -18,7 +18,7 @@ easyBtn.addEventListener('click',function(){
 	colors = createColorsArray(numberOfSquares);
 	pickedColor = colors[getRandomInt(0, (numberOfSquares - 1))];
 	colorDisplay.textContent = pickedColor;
-	h1.style.backgroundColor = '#232323';
+	h1.style.backgroundColor = 'steelblue';
 	
 	for(var i = 0; i < squares.length; i++){
 		if (colors[i]){
@@ -37,7 +37,7 @@ hardBtn.addEventListener('click',function(){
 	colors = createColorsArray(numberOfSquares);
 	pickedColor = colors[getRandomInt(0, (numberOfSquares - 1))];
 	colorDisplay.textContent = pickedColor;
-	h1.style.backgroundColor = '#232323';
+	h1.style.backgroundColor = 'steelblue';
 	
 	for(var i = 0; i < squares.length; i++){
 			squares[i].style.display = 'block';
@@ -63,7 +63,7 @@ for (var i = 0; i < squares.length; i++) {
 			reset.textContent = "PLAY AGAIN?"
 
 		} else {
-			this.style.background = '#232323';
+			this.style.background = 'steelblue';
 			message.textContent = 'Try Again!';
 
 
@@ -80,7 +80,7 @@ reset.addEventListener('click', function(){
 	//show new rgb color details
 	colorDisplay.textContent = pickedColor;
 	//reset background color
-	h1.style.background = '#232323';
+	h1.style.background = 'steelblue';
 	//reset button text
 	reset.textContent = "NEW COLOURS"
 
